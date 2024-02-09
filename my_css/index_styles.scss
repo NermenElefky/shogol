@@ -1,0 +1,163 @@
+@import './header_styles';
+@import './footer';
+@import './components';
+@import './variables';
+@import './mixins';
+
+// start main section styles
+main{
+    min-height: calc(100vh - 261px);
+    border-bottom-right-radius: 150px;
+    background:linear-gradient(to right, #1EAAAD, #02385A);
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: -83px;
+        left: 0;
+        transform: rotateY(180deg);
+        height: 118%;
+        filter: opacity(.7);
+    }
+    .site-info{
+        width : 100%;
+        max-width : 500px;  
+        p{
+            font-size: 17px;
+        } 
+        .main-about-btn:hover , .main-about-btn:active{
+            color : $chief-color !important;
+        }
+    }
+    li{
+        margin:14px;
+        span{
+            margin-right: 5px;
+        }
+    }
+}
+@media (max-width:630px) {
+    .main-content{
+        text-align: center;
+    }
+    main img {
+        display: none;
+    }
+    main li {
+        margin: 12px;
+    }
+}
+// add service section
+.add-service{
+    margin: 70px 0px;
+    h2{
+        color:$subchief;
+        position: relative;
+        &::after{
+            @include create_line(-10px , 50%)
+        }
+    }
+    .add-service-info{
+        p{
+            color:$chief-color;
+            font-size: 23px;
+        }
+        .dot{
+            font-size: 7px;
+        }
+        h2{
+            width: fit-content;
+            &::before{
+                @include create_line(-20px , 42%);
+            }
+        }
+    }
+    .add-service-form{
+        form{
+            background-color: #1eaaad0d;
+        }
+        .card{
+            height:140px;
+        }
+        .card i {
+            font-size: 26px;
+            color: $chief-color;
+        }
+    }
+    
+}
+// services section
+.services{
+    .services-container{
+        background-color: #1eaaad0d;
+    }
+    p{
+        color:$chief-color;
+        font-size: 30px;
+    }
+    .card-container{
+        width:24%;
+        min-width:264px;
+        height: fit-content;
+        transition: .4s;
+    }
+    @include scale_obj(card-container);
+    .worker{
+        img{
+            width:40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 13px;
+        }
+        .flag{
+            width:25px;
+            height:15px;
+        }
+    }
+    .card-body{
+        p{
+            font-size: 15px !important;
+        }
+    }
+    .show-all{
+        width:25%;
+        max-width:230px;
+        min-width: 140px;
+    }
+}
+// contact
+.contact{
+    padding: 0px 120px;
+    img{
+        width: 400px;
+    }
+    p{
+        color:$chief-color;
+        font-size: 23px;
+    }
+    h2{
+        width: fit-content;
+        position: relative;
+        &::after{
+            @include create_line(-10px , 50%)
+        }
+        &::before{
+            @include create_line(-20px , 42%);
+        }
+    }
+}
+@media (max-width:900px) {
+    .contact{
+        padding: 0px 50px;
+    }
+}
+@media (max-width:400px) {
+    .contact{
+        padding: 0px 20px;
+        img{
+            width:336px;
+        }
+    }
+}

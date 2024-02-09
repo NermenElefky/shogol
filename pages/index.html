@@ -1,0 +1,672 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شغل</title>
+    <!-- bootstrap files -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Animate on scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- css files -->
+    <link rel="stylesheet" href="../my_css/index_styles.css" />
+  </head>
+  <body dir="rtl">
+    <!-- creating header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg py-1 border-bottom border-secondary">
+        <div class="container-xl">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html">
+            <i class="bi bi-symmetry-vertical"></i>
+            <span class="navbar-brand-title"
+              ><span>shogol</span><span>شغل</span></span
+            >
+          </a>
+          <!-- links -->
+          <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+            <div class="offcanvas-header">
+              <!-- logo -->
+              <a class="navbar-brand" href="index.html">
+                <i class="bi bi-symmetry-vertical"></i>
+                <span class="navbar-brand-title"
+                  ><span>shogol</span><span>شغل</span></span
+                >
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body nav-links">
+              <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                <li class="nav-item ms-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#">الاعلانات</a>
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#">الطلبات</a>
+                </li>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#">المشتغلين</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تواصل معنا</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a class="nav-link" href="#"> كن مشتغل</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a class="nav-link" href="#">تسجيل الدخول</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- other buttons -->
+          <div class="d-flex flex-nowrap align-items-center">
+            <!-- message button -->
+            <a href="#" class="btn gray-bg-buttons p-2 bf-0"
+              ><i class="bi bi-chat-left-text fw-bold"></i
+            ></a>
+            <!-- notification -->
+            <a href="#" class="btn gray-bg-buttons mx-2 p-2 bf-0"
+              ><i class="bi bi-bell"></i
+            ></a>
+            <a href="#" class="btn mx-2 px-3 chief-btn d-none d-lg-block"
+              >كن مشتغل</a
+            >
+            <a href="#" class="btn login d-none d-lg-block bf-0"
+              >تسجيل الدخول</a
+            >
+            <!-- toggle btn -->
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-three-dots"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- search and add servce section -->
+      <section class="sub-nav container-xl px-3 d-flex my-3 align-items-center">
+        <div class="input-group flex-grow-1">
+          <input
+            type="text"
+            class="form-control bs-0"
+            aria-label="Text input with dropdown button"
+          />
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            المشتغلين
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">المشتغلين</a></li>
+            <li><a class="dropdown-item" href="#">الاعلانات</a></li>
+            <li><a class="dropdown-item" href="#">الطلبات</a></li>
+          </ul>
+        </div>
+        <span class="mx-3 or d-none d-md-block">أو</span>
+        <button class="btn chief-btn px-3 py-2 text-nowrap d-none d-md-block">
+          طلب عرض سعر
+        </button>
+      </section>
+    </header>
+
+    <!-- main part -->
+    <main>
+      <img src="../assests/man-with-laptop.png" alt="man-with-leather-bag" />
+      <div class="container main-content pt-5 pb-2 px-5 text-white">
+        <div class="site-info position-relative z-3">
+          <h1>منصة شغل</h1>
+          <p>
+            هناك حقيفة مثبتة منذ وقت طويل وهى أن المحتوى المقروء لصفحة ما سيلهى
+            القارئ عن التركيرز على الشكل الخارجى للنص أو شكل وضع الفقرات فى
+            الصفحة التى يقرأها
+          </p>
+          <button class="btn bg-white px-5 py-2 mt-4 main-about-btn">
+            عن المنصة
+          </button>
+        </div>
+        <div class="position-absolute bottom-0 mb-2">
+          <ul class="d-flex flex-wrap px-0">
+            <li>
+              <i class="bi bi-bandaid-fill"></i>
+              <span>مفهوم جديد</span>
+            </li>
+            <li>
+              <i class="bi bi-briefcase-fill"></i>
+              <span>مرونة التعامل</span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>تثمين الوقت</span>
+            </li>
+            <li>
+              <i class="bi bi-currency-dollar"></i>
+              <span class="text-nowrap">شمولية فى الخدمات</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- add new service section -->
+    <section class="add-service">
+      <div class="container-xl px-2 px-md-5">
+        <h2 class="text-center fw-bold">
+          لماذا طلب عرض سعر أفضل<i
+            class="fas fa-solid fa-question fa-flip-horizontal"
+          ></i>
+        </h2>
+        <!-- service content -->
+        <div class="add-service-content row mt-5">
+          <div
+            class="add-service-info col-md-6 mb-3 mb-md-0"
+            data-aos="fade-left"
+          >
+            <p class="mb-2">معلومات</p>
+            <h2 class="fw-bold mb-5">
+              لماذا طلب عرض سعر أفضل <i class="fas fa-solid fa-square dot"></i
+              ><i class="fas fa-solid fa-square dot ms-1"></i
+              ><i class="fas fa-solid fa-question fa-flip-horizontal"></i>
+            </h2>
+            <ul>
+              <li class="mb-1">أولا: ستطلب ولن تبحث وستوفر عنا البحث</li>
+              <li>ثانيا: ستكشف سعر السوق للخدمة التى تبحث عنها</li>
+              <li class="my-1">
+                ثالثا: ستتصفح فى السيرة الذاتية للمشتعلين الجاهزين لخدمتك
+              </li>
+              <li>رابعا: ستختار السعر والمشتغل الأنسب لك بكل ثقة وراحة بال</li>
+            </ul>
+          </div>
+          <div class="add-service-form col-md-6">
+            <form class="py-4 px-3">
+              <label for="address-title" class="form-label fw-bold"
+                >عنوان الطلب</label
+              >
+              <input
+                class="form-control"
+                id="address-title"
+                type="text"
+                aria-label="address-title"
+              />
+
+              <label for="address-details" class="form-label mt-5 fw-bold"
+                >تفاصيل الطلب</label
+              >
+              <textarea
+                id="address-details"
+                class="form-control"
+                placeholder="ضف مشروعك هنا"
+              ></textarea>
+
+              <button class="btn chief-btn mt-4">التالى</button>
+            </form>
+            <div
+              class="add-service-cards row px-3 justify-content-between mt-4"
+            >
+              <div
+                class="card col-5 d-flex flex-column align-items-center justify-content-center"
+              >
+                <i class="fas fa-solid fa-comment-dollar mb-2"></i>
+                <p class="m-0">تكشف أسعار السوق</p>
+              </div>
+              <div
+                class="card col-5 d-flex flex-column align-items-center justify-content-center"
+              >
+                <i class="fas fa-solid fa-business-time mb-2"></i>
+                <p class="m-0">توفير الوقت</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- add work map image -->
+    <section>
+      <div class="container-xl">
+        <img src="../assests/work-map.png" alt="work map" class="w-100" />
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="my-5 services px-3">
+      <div class="container-xl px-5 py-3 services-container">
+        <p class="text-center">بعض الخدمات ووظائف شغل</p>
+        <h2 class="text-center fw-bold mt-2 mb-5">
+          اهم الخدمات الاحترافية لتطوير وتنمية اعمالك
+        </h2>
+        <div
+          class="services-cards d-flex flex-wrap justify-content-md-between justify-content-around"
+        >
+          <a
+            href="#"
+            class="card-container"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+          >
+            <div class="card border-0 p-0 overflow-hidden rounded-top-4 mt-2">
+              <img
+                src="../assests/card-1.jpg"
+                class="card-img-top me-3"
+                alt="website image for a job"
+              />
+              <div
+                class="worker d-flex align-items-center mt-2 px-2 border-bottom border-bottom-secondary"
+              >
+                <img
+                  src="../assests/profile-img.jpg"
+                  alt="profile image"
+                  class="worker-img"
+                />
+                <div class="worker-info flex-grow-1 ms-3">
+                  <p class="d-flex justify-content-between m-0 mb-1">
+                    <span class="fw-bold text-black">
+                      محمد مصطفى
+                      <img
+                        src="../assests/egypt-flag.jpg"
+                        alt="egypt flag"
+                        class="flag ms-1"
+                    /></span>
+                    <span
+                      >(22)4.4<i class="fas fa-solid fa-star text-warning"></i
+                    ></span>
+                  </p>
+                  <p class="m-0">مصمم مواقع - جافا سكربت</p>
+                </div>
+              </div>
+              <div class="card-body mt-2 px-3">
+                <h6 class="card-title fw-bold">
+                  متخصصو تطبيقات الويب التقدمية
+                </h6>
+                <p class="card-text text-secondary">
+                  مصمم جرافيك مرحباأنا عدنان السورى اعمل لدى شركة فرانكو للادوات
+                  الصحية ولدى العديد من الخبرات فى هذا المجال
+                </p>
+                <div
+                  class="service-time-money d-flex align-items-center justify-content-between"
+                >
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-coins"></i> ريال 250
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-calendar"></i> قبل 25 دقيقة
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card -->
+          <a
+            href="#"
+            class="card-container"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+          >
+            <div class="card border-0 p-0 overflow-hidden rounded-top-4 mt-2">
+              <img
+                src="../assests/card-2.jpg"
+                class="card-img-top me-3"
+                alt="website image for a job"
+              />
+              <div
+                class="worker d-flex align-items-center mt-2 px-2 border-bottom border-bottom-secondary"
+              >
+                <img
+                  src="../assests/profile-img.jpg"
+                  alt="profile image"
+                  class="worker-img"
+                />
+                <div class="worker-info flex-grow-1 ms-3">
+                  <p class="d-flex justify-content-between m-0 mb-1">
+                    <span class="fw-bold text-black">
+                      محمد مصطفى
+                      <img
+                        src="../assests/egypt-flag.jpg"
+                        alt="egypt flag"
+                        class="flag ms-1"
+                    /></span>
+                    <span
+                      >(22)4.4<i class="fas fa-solid fa-star text-warning"></i
+                    ></span>
+                  </p>
+                  <p class="m-0">مصمم مواقع - جافا سكربت</p>
+                </div>
+              </div>
+              <div class="card-body mt-2 px-3">
+                <h6 class="card-title fw-bold">
+                  متخصصو تطبيقات الويب التقدمية
+                </h6>
+                <p class="card-text text-secondary">
+                  مصمم جرافيك مرحباأنا عدنان السورى اعمل لدى شركة فرانكو للادوات
+                  الصحية ولدى العديد من الخبرات فى هذا المجال
+                </p>
+                <div
+                  class="service-time-money d-flex align-items-center justify-content-between"
+                >
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-coins"></i> ريال 250
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-calendar"></i> قبل 25 دقيقة
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card -->
+          <a
+            href="#"
+            class="card-container"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+          >
+            <div class="card border-0 p-0 overflow-hidden rounded-top-4 mt-2">
+              <img
+                src="../assests/card-3.jpg"
+                class="card-img-top me-3"
+                alt="website image for a job"
+              />
+              <div
+                class="worker d-flex align-items-center mt-2 px-2 border-bottom border-bottom-secondary"
+              >
+                <img
+                  src="../assests/profile-img.jpg"
+                  alt="profile image"
+                  class="worker-img"
+                />
+                <div class="worker-info flex-grow-1 ms-3">
+                  <p class="d-flex justify-content-between m-0 mb-1">
+                    <span class="fw-bold text-black">
+                      محمد مصطفى
+                      <img
+                        src="../assests/egypt-flag.jpg"
+                        alt="egypt flag"
+                        class="flag ms-1"
+                    /></span>
+                    <span
+                      >(22)4.4<i class="fas fa-solid fa-star text-warning"></i
+                    ></span>
+                  </p>
+                  <p class="m-0">مصمم مواقع - جافا سكربت</p>
+                </div>
+              </div>
+              <div class="card-body mt-2 px-3">
+                <h6 class="card-title fw-bold">
+                  متخصصو تطبيقات الويب التقدمية
+                </h6>
+                <p class="card-text text-secondary">
+                  مصمم جرافيك مرحباأنا عدنان السورى اعمل لدى شركة فرانكو للادوات
+                  الصحية ولدى العديد من الخبرات فى هذا المجال
+                </p>
+                <div
+                  class="service-time-money d-flex align-items-center justify-content-between"
+                >
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-coins"></i> ريال 250
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-calendar"></i> قبل 25 دقيقة
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- card -->
+          <a
+            href="#"
+            class="card-container"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+          >
+            <div class="card border-0 p-0 overflow-hidden rounded-top-4 mt-2">
+              <img
+                src="../assests/card-4.jpg"
+                class="card-img-top me-3"
+                alt="website image for a job"
+              />
+              <div
+                class="worker d-flex align-items-center mt-2 px-2 border-bottom border-bottom-secondary"
+              >
+                <img
+                  src="../assests/profile-img.jpg"
+                  alt="profile image"
+                  class="worker-img"
+                />
+                <div class="worker-info flex-grow-1 ms-3">
+                  <p class="d-flex justify-content-between m-0 mb-1">
+                    <span class="fw-bold text-black">
+                      محمد مصطفى
+                      <img
+                        src="../assests/egypt-flag.jpg"
+                        alt="egypt flag"
+                        class="flag ms-1"
+                    /></span>
+                    <span
+                      >(22)4.4<i class="fas fa-solid fa-star text-warning"></i
+                    ></span>
+                  </p>
+                  <p class="m-0">مصمم مواقع - جافا سكربت</p>
+                </div>
+              </div>
+              <div class="card-body mt-2 px-3">
+                <h6 class="card-title fw-bold">
+                  متخصصو تطبيقات الويب التقدمية
+                </h6>
+                <p class="card-text text-secondary">
+                  مصمم جرافيك مرحباأنا عدنان السورى اعمل لدى شركة فرانكو للادوات
+                  الصحية ولدى العديد من الخبرات فى هذا المجال
+                </p>
+                <div
+                  class="service-time-money d-flex align-items-center justify-content-between"
+                >
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-coins"></i> ريال 250
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fas fa-solid fa-calendar"></i> قبل 25 دقيقة
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn chief-btn mt-3 show-all">عرض الكل</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="row contact pt-5">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="800"
+        class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+      >
+        <img src="../assests/contact_image.png" alt="contact with people" />
+      </div>
+      <div class="mt-5 mt-lg-0 col-12 col-lg-6">
+        <p>معلومات</p>
+        <h2 class="mb-5">نحن نفضل أن نسمع منك</h2>
+        <form class="row row-gap-5">
+          <!-- name filed -->
+          <div class="col-5">
+            <label for="name" class="form-label mb-2">الاسم</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="الاسم"
+              id="name"
+            />
+          </div>
+
+          <!-- email field -->
+          <div class="col-5">
+            <label for="email" class="form-label mb-2">الايميل</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="mmmm@gmail.com"
+              id="email"
+            />
+          </div>
+
+          <!-- phone number filed -->
+          <div class="col-5">
+            <label for="phone" class="form-label mb-2">رقم الجوال</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="000000000"
+              id="phone"
+            />
+          </div>
+
+          <!-- field -->
+          <div class="col-5">
+            <label for="field" class="form-label mb-2">المجال</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="المجال"
+              id="field"
+            />
+          </div>
+
+          <!-- comment -->
+          <div class="col-12">
+            <label for="comment" class="form-label mb-2">اكتب تعليقك</label>
+            <textarea
+              id="comment"
+              class="form-control"
+              placeholder="اكتب تعليقك"
+            ></textarea>
+          </div>
+
+          <!-- send -->
+          <div class="col-12">
+            <button class="btn chief-btn">إرسال</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-5 py-5">
+      <div class="container-xl">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-symmetry-vertical"></i>
+          <span class="navbar-brand-title"
+            ><span>shogol</span><span>شغل</span></span
+          >
+        </a>
+        <div
+          class="d-flex justify-content-between mt-5 links-container flex-wrap"
+        >
+          <div class="links-g-1 d-flex flex-column pe-5 pt-5">
+            <a href="#" class="text-white">معلومات عن شغل</a>
+            <a href="#" class="text-white my-1">الاسئلة الشائعة</a>
+            <a href="#" class="text-white">ضمان حقوقك</a>
+            <a href="#" class="text-white mt-1">شروط الاستخدام</a>
+          </div>
+          <div class="links-g-2 d-flex flex-column pe-5 pt-5">
+            <p class="special-t mb-1">روابط</p>
+            <a href="#" class="text-white">الشركات</a>
+            <a href="#" class="text-white my-1">المقالات</a>
+            <a href="#" class="text-white">مركز المساعدة</a>
+          </div>
+          <div class="links-g-3 d-flex flex-column pe-5 pt-5">
+            <p class="special-t mb-1">صفحات</p>
+            <a href="#" class="text-white">تسجيل جديد</a>
+            <a href="#" class="text-white my-1">تصفح كل الملفات</a>
+            <a href="#" class="text-white">اتصل بنا</a>
+          </div>
+          <div class="download-app d-flex flex-column pe-5 pt-5">
+            <p class="special-t mb-1">حمل تطبيق شغل</p>
+            <a
+              href="#"
+              class="btn bg-white mb-1 d-flex align-items-center mb-2"
+            >
+              <span
+                >Avaliable on the
+                <span class="fw-bold big-text">App store</span></span
+              >
+              <i class="fab fa-brands fa-apple"></i>
+            </a>
+            <a href="#" class="btn bg-white">
+              <span class="big-text fw-bold">Google play</span>
+              <i class="fab fa-brands fa-google-play"></i>
+            </a>
+          </div>
+          <div class="social pe-5 pt-5">
+            <p class="special-t">تابعنا</p>
+            <div class="my-1 d-flex">
+              <a
+                href="#"
+                class="btn bg-white rounded-4 d-flex align-items-center justify-content-center"
+                ><i class="fab fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="btn bg-white rounded-4 d-flex align-items-center justify-content-center mx-1"
+                ><i class="fab fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="btn bg-white rounded-4 d-flex align-items-center justify-content-center"
+                ><i class="fab fa-brands fa-snapchat"></i
+              ></a>
+              <a
+                href="#"
+                class="btn bg-white rounded-4 d-flex align-items-center justify-content-center ms-1"
+                ><i class="fab fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- anoimate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

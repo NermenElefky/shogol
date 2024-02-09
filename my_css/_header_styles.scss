@@ -1,0 +1,62 @@
+@import  './variables';
+
+.navbar{
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+        color: $chief-color;
+        i {
+            font-size: 2rem;
+            margin-left: 15px;
+            transform: rotate(23deg);
+           
+        }
+        .navbar-brand-title{
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-brand-title span:first-of-type{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: .9rem;
+           
+        }
+        .navbar-brand-title span:last-of-type{
+            font-family: $messiri;
+            font-weight: bold;
+          
+        }
+    }
+    .nav-links{
+        font-family: "Cairo", sans-serif;
+        font-weight: bold;
+        .nav-link{
+            color : $links;
+        }
+        .nav-link.active , .nav-link:hover{
+            color:$subchief;
+        }
+    }
+    .gray-bg-buttons{
+        background-color: $btns-bg;
+    }
+    .gray-bg-buttons i {
+        color: $chief-color;
+        -webkit-text-stroke: .4px;
+        transition: .3s;
+    }
+    .gray-bg-buttons:hover i {
+        color: $subchief;
+    }
+    .login{
+        color:$chief-color
+    }
+    .login:hover{
+        color:$subchief;
+    }
+}
+
+// sub nav section
+.or{
+    color:$links;
+}

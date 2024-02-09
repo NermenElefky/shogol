@@ -1,0 +1,47 @@
+@import './variables';
+
+
+body{
+    font-family: $messiri;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+    min-height: 80px !important;
+}
+// remove focus styles
+button:focus{
+    box-shadow: none !important;
+}
+
+// remove border from a 
+.bf-0:focus{
+    border : 0 !important;
+}
+// remove box shadow
+.bs-0:focus{
+    box-shadow: none !important;
+    border-color: $chief-color;
+}
+
+
+
+
+// components
+.chief-btn{
+    background-color: $chief-color;
+    border : 2px solid $chief-color;
+    transition: .3s;
+    color : #fff;
+}
+.chief-btn:hover{
+    background-color: transparent;
+    border : 2px solid $chief-color;
+    color:$chief-color;
+}
